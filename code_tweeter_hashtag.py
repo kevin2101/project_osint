@@ -6,10 +6,10 @@ from collections import Counter
 
 
 # Remplacez les valeurs ci-dessous par vos propres clés et jetons d'accès Twitter
-consumer_key = "fMxBoczQWDTp1cJ40XY4XBaMU"
-consumer_secret = "UVHSYTTBSwAElPguKJ3l5jwu1xbukYgNm7BmhZgXGyqFy3MdN8"
-access_token = "2467414650-nDLsaFQSZovoFqDyCaUQPklwGzsjpH1eqhHHz6D"
-access_token_secret = "FAhAEbEuWcA9GOhYn4IjQC5dccEAW7BWo4vNTw7EXjyLZ"
+consumer_key = " "
+consumer_secret = " "
+access_token = " "
+access_token_secret = " "
 
 # Authentification à l'API Twitter
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
