@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat</title>
+</head>
+<body>
+    <div>
+        <h1>Résultat :</h1>
+        <pre>Nom d'utilisateur : {{ result.user_info.name }}</pre>
+        <pre>Nombre d'abonnés : {{ result.user_info.followers }}</pre>
+        <pre>Nombre d'amis : {{ result.user_info.friends }}</pre>
+        <pre>Localisation : {{ result.user_info.location }}</pre>
+        <pre>Description : {{ result.user_info.description }}</pre>
+        <pre>Statut : {{ result.user_info.statut }}</pre>
+        <pre>Date de création : {{ result.user_info.created }}</pre>
+    </div>
+
+    <br><br>
+
+    <h2>Tweets</h2>
+    <div>
+
+        {% for item in result.all_tweets %}
+            <p>{{ item.text }}</p>
+            <p><i>{{ item.created_at }}</i></p>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
